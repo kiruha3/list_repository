@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.kiruha3</groupId>
-	<artifactId>list_first</artifactId>
+	<artifactId>list</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>listfirst</name>
-	<description>chekandworkwithelistfist</description>
+	<name>list</name>
+	<description>chekandworkwithelist</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

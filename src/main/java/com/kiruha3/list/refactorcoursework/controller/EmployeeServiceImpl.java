@@ -1,11 +1,11 @@
-package com.kiruha3.listfirst.refactorcoursework.controller;
+package com.kiruha3.list.refactorcoursework.controller;
 
 
-import com.kiruha3.listfirst.refactorcoursework.Employee;
-import com.kiruha3.listfirst.refactorcoursework.EmployeeService;
-import com.kiruha3.listfirst.selfexceptions.EmployeeAlreadyAddedException;
-import com.kiruha3.listfirst.selfexceptions.EmployeeNotFoundException;
-import com.kiruha3.listfirst.selfexceptions.EmployeeStorageIsFullException;
+import com.kiruha3.list.refactorcoursework.Employee;
+import com.kiruha3.list.refactorcoursework.EmployeeService;
+import com.kiruha3.list.selfexceptions.EmployeeAlreadyAddedException;
+import com.kiruha3.list.selfexceptions.EmployeeNotFoundException;
+import com.kiruha3.list.selfexceptions.EmployeeStorageIsFullException;
 import org.springframework.stereotype.Service;
 
 @Service

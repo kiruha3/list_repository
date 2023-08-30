@@ -1,4 +1,4 @@
-package com.kiruha3.listfirst.refactorcoursework;
+package com.kiruha3.list.refactorcoursework;
 
 import org.springframework.stereotype.Service;
 
