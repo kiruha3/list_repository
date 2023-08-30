@@ -3,13 +3,15 @@ package com.kiruha3.list.refactorcoursework.controller;
 
 import com.kiruha3.list.refactorcoursework.Employee;
 
+import java.util.Collection;
+
 public interface EmployeeInterface {
-    void addEmployee(Employee employee);
+    Employee addEmployee(Employee employee);
 
-    String allEmployee();
+    Collection<Employee> allEmployee();
 
-    String findEmployee(Employee employee);
+    Employee findEmployee(Employee employee);
 
-    String removeEmployee(Employee employee);
+    Employee removeEmployee(Employee employee);
 
 }

@@ -8,6 +8,9 @@ import com.kiruha3.list.selfexceptions.EmployeeNotFoundException;
 import com.kiruha3.list.selfexceptions.EmployeeStorageIsFullException;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.Collections;
+
 @Service
 public class EmployeeServiceImpl implements EmployeeInterface {
     private final EmployeeService employeeService;
@@ -17,34 +20,36 @@ public class EmployeeServiceImpl implements EmployeeInterface {
     }
 
     @Override
-    public void addEmployee(Employee employee) {
+    public Employee addEmployee(Employee employee) {
         if (employeeService.employee.size() == employeeService.maxCountEmployee) {
             throw new EmployeeStorageIsFullException();
         } else if (employeeService.employee.contains(employee)) {
             throw new EmployeeAlreadyAddedException();
-        } else
+        } else{
             employeeService.employee.add(employee);
+            return employee;
+        }
     }
 
 
     @Override
-    public String allEmployee() {
-        return employeeService.employee.toString();
+    public Collection<Employee> allEmployee() {
+        return Collections.unmodifiableList(employeeService.employee);
 
     }
 
     @Override
-    public String findEmployee(Employee employee) {
+    public Employee findEmployee(Employee employee) {
         if (employeeService.employee.contains(employee)) {
-            return employeeService.employee.get(employeeService.employee.indexOf(employee)).toString();
+            return employeeService.employee.get(employeeService.employee.indexOf(employee));
         } else
             throw new EmployeeNotFoundException();
     }
 
     @Override
-    public String removeEmployee(Employee employee) {
+    public Employee removeEmployee(Employee employee) {
         if (employeeService.employee.contains(employee)) {
-            return employeeService.employee.remove(employeeService.employee.indexOf(employee)).toString();
+            return employeeService.employee.remove(employeeService.employee.indexOf(employee));
         } else
             throw new EmployeeNotFoundException();
     }
