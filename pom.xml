@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.kiruha3</groupId>
-	<artifactId>exception</artifactId>
+	<artifactId>list_first</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>exception</name>
-	<description>chekandworkwithexception</description>
+	<description>chekandworkwithelistfist</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
