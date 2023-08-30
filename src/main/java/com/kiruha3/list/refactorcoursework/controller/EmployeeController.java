@@ -38,7 +38,6 @@ public class EmployeeController {
         }
     }
 
-
     @GetMapping(path = "/find")
     public String findEmployer(@RequestParam(value = "firstName", required = false) String firstName,
                                @RequestParam(value = "lastName") String lastName) {

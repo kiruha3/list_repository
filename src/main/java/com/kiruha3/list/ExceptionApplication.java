@@ -10,4 +10,5 @@ public class ExceptionApplication {
 		SpringApplication.run(ExceptionApplication.class, args);
 	}
 
+
 }
