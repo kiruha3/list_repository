@@ -1,4 +1,4 @@
-package com.kiruha3.exception;
+package com.kiruha3.listfirst;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,7 @@
-package com.kiruha3.exception.refactorcoursework.controller;
+package com.kiruha3.listfirst.refactorcoursework.controller;
 
-import com.kiruha3.list.refactorcoursework.Employee;
+
+import com.kiruha3.listfirst.refactorcoursework.Employee;
 
 public interface EmployeeInterface {
     void addEmployee(Employee employee);

@@ -11,7 +11,7 @@
 	<groupId>com.kiruha3</groupId>
 	<artifactId>list_first</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>exception</name>
+	<name>listfirst</name>
 	<description>chekandworkwithelistfist</description>
 	<properties>
 		<java.version>11</java.version>

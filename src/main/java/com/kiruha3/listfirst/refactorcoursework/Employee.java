@@ -1,4 +1,4 @@
-package com.kiruha3.exception.refactorcoursework;
+package com.kiruha3.listfirst.refactorcoursework;
 
 import java.util.Objects;
 
