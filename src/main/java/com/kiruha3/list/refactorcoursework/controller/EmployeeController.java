@@ -38,16 +38,6 @@ public class EmployeeController {
         }
     }
 
-    @GetMapping(path = "/findToNum")
-    public String findToNumEmployer(@RequestParam(value = "num", required = false) Integer i) {
-        try {
-            employeeServiceImpl.findToNumEmployee(i);
-            String str = employeeServiceImpl.findToNumEmployee(i).toString();
-            return "пользователь под номером " + i + "\n" + str;
-        } catch (EmployeeNotFoundException e) {
-            return "EmployeeNotFound" + i;
-        }
-    }
 
     @GetMapping(path = "/find")
     public String findEmployer(@RequestParam(value = "firstName", required = false) String firstName,
@@ -60,15 +50,6 @@ public class EmployeeController {
         }
     }
 
-    @GetMapping(path = "/removeToNum")
-    public String removeToNumEmployer(@RequestParam(value = "num", required = false) Integer i) {
-        try {
-            employeeServiceImpl.removeToNumEmployee(i);
-            return "Успешно удален пользователем под номером " + i;
-        } catch (EmployeeNotFoundException e) {
-            return "EmployeeNotFound" + i;
-        }
-    }
 
     @GetMapping(path = "/remove")
     public String removeEmployer(@RequestParam(value = "firstName", required = false) String firstName,

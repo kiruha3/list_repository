@@ -26,26 +26,6 @@ public class EmployeeServiceImpl implements EmployeeInterface {
             employeeService.employee.add(employee);
     }
 
-
-    @Override
-    public void removeToNumEmployee(Integer i) {
-        if (employeeService.employee.size() > i) {
-            Employee removeEmpl = employeeService.employee.get(i);
-            employeeService.employee.remove(removeEmpl);
-        } else {
-            throw new EmployeeNotFoundException();
-        }
-    }
-
-    @Override
-    public Employee findToNumEmployee(Integer i) {
-        if (employeeService.employee.size() <= i) {
-            throw new EmployeeNotFoundException();
-        } else {
-            return employeeService.employee.get(i);
-        }
-    }
-
     @Override
     public String allEmployee() {
         return employeeService.employee.toString();

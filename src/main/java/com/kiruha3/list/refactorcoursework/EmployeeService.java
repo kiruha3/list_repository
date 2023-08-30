@@ -16,7 +16,6 @@ public class EmployeeService {
             new Employee("Уля", "Таккаяко"),
             new Employee("Лена", "Кудрявцева"),
             new Employee("Ида", "Горшановна"),
-            new Employee("Аглая", "Осиповна"),
-            new Employee("Зара", "Мальдер")
+            new Employee("Аглая", "Осиповна")
     ));
 }
