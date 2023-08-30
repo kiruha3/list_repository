@@ -1,4 +1,4 @@
-package com.kiruha3.exception;
+package com.kiruha3.list;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

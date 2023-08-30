@@ -11,8 +11,8 @@
 	<groupId>com.kiruha3</groupId>
 	<artifactId>list</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>exception</name>
-	<description>chekandworkwithexception</description>
+	<name>list</name>
+	<description>chekandworkwithelist</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
